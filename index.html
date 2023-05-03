@@ -57,13 +57,13 @@
 				<div class="row">
 					<div class="col-sm-3"></div>
 					<div class="form-group col-sm-2">
-						<input class="form-control" type="number" id="celsius-input" placeholder="Celsius">
+						<input class="form-control" type="number" id="fahrenheit-input" placeholder="Celsius">
 					</div>
 					<div class="col-sm-2 text-center" style="font-size: 1.5rem">
 						→
 					</div>
 					<div class="form-group col-sm-2">
-						<input class="form-control" type="number" id="fahrenheit" placeholder="Fahrenheit" readonly>
+						<input class="form-control" type="number" id="celsius" placeholder="Fahrenheit" readonly>
 					</div>
 					<div class="col-sm-3"></div>
 				</div>
@@ -122,8 +122,8 @@
 		<script>
 			const date = new Date();
 			document.getElementById('today').textContent = date;
-			const celsius = document.getElementById('celsius-input');
-			const fahrenheitEl = document.getElementById('fahrenheit');
+			const fahrenheit = document.getElementById('fahrenheit-input');
+			const fcelsiusEl = document.getElementById('celsius');
 
 			function temperature(){
 				const fahrenheit = (celsius.value - 32) * 0.5556;
